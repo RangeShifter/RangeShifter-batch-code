@@ -26,8 +26,8 @@
 #define VersionH
 
 #define RSDEBUG 0
-#define LINUX_CLUSTER 1
-#define RSWIN64 0
+#define LINUX_CLUSTER 0
+#define RSWIN64 1
 #define BATCH 1
 
 //---------------------------------------------------------------------------
