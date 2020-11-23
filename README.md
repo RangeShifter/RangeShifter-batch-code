@@ -16,3 +16,14 @@ processes. Due to its modular structure, the level of detail in genetics, demogr
 dispersal processes can be easily adapted to different research questions and 
 available data.
 
+## Usage
+
+Please refer to our [website](https://rangeshifter.github.io/) for more information about the RangeShifter  
+platform and to the RangeShifter User Manual which can be found here: https://github.com/RangeShifter/RangeShifter-software-and-documentation
+
+
+## References
+
+ - Bocedi G, Palmer SCF, Pe’er G, Heikkinen RK, Matsinos YG, Watts K, Travis JMJ (2014). 
+ *RangeShifter: A Platform for Modelling Spatial Eco-Evolutionary Dynamics and 
+ Species’ Responses to Environmental Changes.* Methods in Ecology and Evolution 5: 388–96. 
