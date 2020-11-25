@@ -18,7 +18,9 @@ available data.
 
 ## Building RangeShifter
 RangeShifter can be built in Windows or Linux. To build the programm you need to set the operating system in the file Version.h.
+
 For Windows: set #define LINUX_CLUSTER 0
+
 For Linux: set #define LINUX_CLUSTER 1
 
 ## Usage
