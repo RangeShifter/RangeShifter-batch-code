@@ -25,8 +25,7 @@ For Linux: set #define LINUX_CLUSTER 1
 
 ## Usage
 
-Please refer to our [website](https://rangeshifter.github.io/) for more information about the RangeShifter  
-platform and to the RangeShifter User Manual which can be found here: https://github.com/RangeShifter/RangeShifter-software-and-documentation
+Please refer to our [website](https://rangeshifter.github.io/) for more information about the RangeShifter platform and to the RangeShifter User Manual which can be found here: https://github.com/RangeShifter/RangeShifter-software-and-documentation
 
 
 ## References
