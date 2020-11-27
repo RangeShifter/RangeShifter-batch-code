@@ -34,7 +34,7 @@ Methods in Ecology and Evolution, 5, 388-396. doi: 10.1111/2041-210X.12162
 
 Authors: Greta Bocedi & Steve Palmer, University of Aberdeen
 
-Last updated: 9 November 2020 by Steve Palmer
+Last updated: 27 November 2020 by Anne-Kathleen Malchow, Potsdam University
 
 ------------------------------------------------------------------------------*/
 
@@ -53,16 +53,16 @@ using namespace std;
 #include "Model.h"
 
 struct batchfiles {
-	bool ok;
-	int batchNum;
-	int nSimuls;
-	int nLandscapes;
-	int patchmodel,resolution,landtype,maxNhab,speciesdist,distresolution;
-	int reproductn;
-	int repseasons;
-	int stagestruct,stages,transfer;
-	int sexesDem;		// no. of explicit sexes for demographic model
-	int sexesDisp;	// no. of explicit sexes for dispersal model
+	bool ok{};
+	int batchNum{};
+	int nSimuls{};
+	int nLandscapes{};
+	int patchmodel{}, resolution{}, landtype{}, maxNhab{}, speciesdist{}, distresolution{};
+	int reproductn{};
+	int repseasons{};
+	int stagestruct{}, stages{}, transfer{};
+	int sexesDem{};		// no. of explicit sexes for demographic model
+	int sexesDisp{};	// no. of explicit sexes for dispersal model
 	string parameterFile;
 	string landFile;
 	string stageStructFile;
@@ -189,9 +189,7 @@ extern paramSim *paramsSim;
 extern Species *pSpecies;
 extern string costmapname;	// see FormMove.cpp (VCL) OR Main.cpp (batch)
 extern string genfilename;	// see FormGenetics.cpp (VCL) OR Main.cpp (batch)
-#if !LINUX_CLUSTER && !RS_RCPP
-extern int RS_random_seed;			// see RSrandom.cpp
-#endif // !LINUX_CLUSTER && !RS_RCPP
+extern int RS_random_seed;
 
 //---------------------------------------------------------------------------
 #endif

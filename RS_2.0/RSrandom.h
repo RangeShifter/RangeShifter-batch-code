@@ -28,7 +28,7 @@ Implements the RSrandom class
 
 Author: Steve Palmer, University of Aberdeen
 
-Last updated: 9 November 2020 by Steve Palmer
+Last updated: 24 November 2020 by Anne-Kathleen Malchow
 
 ------------------------------------------------------------------------------*/
 
@@ -47,36 +47,51 @@ using namespace std;
 extern ofstream DEBUGLOG;
 #endif
 
-	#if LINUX_CLUSTER
-	//#include <random>
-	//#include <tr1/random>
-	#include "maths.h"
-	#else
-	#if RSWIN64
-	#include <dinkumware64/random>
-	#else
-	#include <dinkumware/random>
-	#endif
+
+//--------------- 1.) Former version of RSrandom.cpp
+
+
+
+//--------------- 2.) New version of RSrandom.cpp
+
+
+	#include <cmath>
+	#include <random>
+	#if !LINUX_CLUSTER
+	#include <ctime>
 	#endif
 
-	class RSrandom {
+	class RSrandom
+	{
 
 	public:
 		RSrandom(void);
 		~RSrandom(void);
 		double Random(void);
-		int IRandom(int,int);
+		int IRandom(int, int);
 		int Bernoulli(double);
-		double Normal(double,double);
+		double Normal(double, double);
 		int Poisson(double);
+		mt19937 getRNG(void);
 
 	private:
-		double normal_x2; int normal_x2_valid; // variables used by Normal distribution
-	#if !LINUX_CLUSTER
-		tr1::uniform_real<> *pRandom01;
-		tr1::normal_distribution<> *pNormal;
-	#endif
+		mt19937* gen;
+		std::uniform_real_distribution<>* pRandom01;
+		std::normal_distribution<>* pNormal;
 	};
 
+
+//--------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------
+
+
+
+//--------------- 3.) R package version of RSrandom.cpp
+
+
 //---------------------------------------------------------------------------
+
 #endif // RSrandomH
+
+
+
