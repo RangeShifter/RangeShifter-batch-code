@@ -16,10 +16,16 @@ processes. Due to its modular structure, the level of detail in genetics, demogr
 dispersal processes can be easily adapted to different research questions and 
 available data.
 
+## Building RangeShifter
+RangeShifter can be built in Windows or Linux. To build the programm you need to set the operating system in the file Version.h.
+
+For Windows: set #define LINUX_CLUSTER 0
+
+For Linux: set #define LINUX_CLUSTER 1
+
 ## Usage
 
-Please refer to our [website](https://rangeshifter.github.io/) for more information about the RangeShifter  
-platform and to the RangeShifter User Manual which can be found here: https://github.com/RangeShifter/RangeShifter-software-and-documentation
+Please refer to our [website](https://rangeshifter.github.io/) for more information about the RangeShifter platform and to the RangeShifter User Manual which can be found here: https://github.com/RangeShifter/RangeShifter-software-and-documentation
 
 
 ## References
